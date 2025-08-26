@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Crew Techventure</title>
+</head>
+
+<body>
+    <section id="home1">
+
+        <canvas id="network"></canvas>
+        <div id="navbarImplement"></div>
+        <main class="main-content">
+            <section class="hero-section-1">
+                <p class="company-slogan">Your Trusted Online Partner</p>
+                <h1 class="main-heading">Powering Your Next Digital Leap</h1>
+                <p class="description">
+                    Crew Tech Venture is a premier transnational ITES group committed to delivering innovative online
+                    solutions to organizations worldwide. With a focus on accuracy, speed, and actionable insights, we
+                    empower businesses to make informed decisions and drive sustainable growth.
+                </p>
+                <div class="cta-section">
+                    <button class="btn-primary btn">Get Started Today</button>
+                    <!-- <button class="btn-secondary btn">Learn More</button> -->
+                </div>
+            </section>
+        </main>
+    </section>
+
+    <div class=" our-services">
+        <div class="section-title">
+            <h2 class="">Our Services</h2>
+            <p class="text-center fs-5">At Crew Tech Venture, we deliver technology-driven solutions that help
+                businesses
+                grow
+                smarter, faster, and
+                more efficiently</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" onclick="addRipple(event)" data-aos="fade-right" data-aos-delay="300"
+                data-aos-duration="1000">
+                <div class="icon-container">
+                    <div class="icon web-dev">
+                        💻
+                    </div>
+                </div>
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-description">
+                    Responsive, scalable, and secure websites tailored to meet your business needs, from corporate sites
+                    to e-commerce platforms.
+                </p>
+            </div>
+
+            <div class="service-card" onclick="addRipple(event)" data-aos="fade-up" data-aos-delay="500"
+                data-aos-duration="1000">
+                <div class="icon-container">
+                    <div class="icon app-dev">
+                        📱
+                    </div>
+                </div>
+                <h3 class="service-title">App Development</h3>
+                <p class="service-description">
+                    User-friendly mobile and web applications with seamless functionality, built to enhance customer
+                    engagement and drive business growth.
+                </p>
+            </div>
+
+            <div class="service-card" onclick="addRipple(event)" data-aos="fade-left" data-aos-delay="700"
+                data-aos-duration="1000">
+                <div class="icon-container">
+                    <div class="icon graphics">
+                        🎨
+                    </div>
+                </div>
+                <h3 class="service-title">Graphics Designing</h3>
+                <p class="service-description">
+                    Creative and impactful designs, including branding, UI/UX, marketing materials, and digital assets
+                    that bring your ideas to life.
+                </p>
+            </div>
+            <div class="service-card" onclick="addRipple(event)" data-aos="fade-left" data-aos-delay="700"
+                data-aos-duration="1000">
+                <div class="icon-container">
+                    <div class="icon graphics">
+                        🎨
+                    </div>
+                </div>
+                <h3 class="service-title">Market Research Support</h3>
+                <p class="service-description">
+                    Reliable online research assistance, data processing, and analytics to help organizations make
+                    informed decisions.
+                </p>
+            </div>
+            <div class="service-card" onclick="addRipple(event)" data-aos="fade-left" data-aos-delay="700"
+                data-aos-duration="1000">
+                <div class="icon-container">
+                    <div class="icon graphics">
+                        🎨
+                    </div>
+                </div>
+                <h3 class="service-title">IT-Enabled Solutions</h3>
+                <p class="service-description">
+                    Customized technology solutions designed to streamline processes, improve productivity, and ensure
+                    business continuity.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section id="home3">
+        <section class="projects-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Projects</h2>
+                    <p> At Crew Tech Venture, we take pride in delivering impactful digital solutions across industries.
+                        Some of our key projects include: </p>
+                </div>
+
+                <div class="carousel-container" id="projectCarousel">
+                    <!-- Project cards will be dynamically inserted here -->
+                </div>
+
+                <div class="carousel-controls">
+                    <button class="control-btn" id="prevBtn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="control-btn" id="nextBtn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="home4">
+        <div class="py-4 px-5">
+            <div class="fs-1 mx-4 my-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1500">Smart Code.
+                Real Results.</div>
+            <div style="grid-template-columns: 1fr 1fr;" class="d-grid gap-0 column-gap-3 my-4 mx-3 py-5">
+                <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">
+                    <div class=" my-4 py-4">
+                        <div class="fs-1 fw-semibold">100K+</div>
+                        <div>Lines of code Delevered</div>
+                    </div>
+                    <div class="my-4 py-4">
+                        <div class="fs-1 fw-semibold">500+</div>
+                        <div>Dev Hours and Counting</div>
+                    </div>
+                </div>
+                <div class="my-4 py-4" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
+                    <div class="fs-1 lh-3">Delivering Impactful Software at Scale
+                    </div>
+                    <div class="fs-5 lh-3 my-3">Our team Brings deep technical knowledgeand agile execution to every
+                        projects,
+                        ensuring quality
+                        from start to finish.</div>
+                    <div class="my-4"><a href="contact.html"><button class="btn btn-outline-primary rounded-3">Let's
+                                Build Together</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="home5">
+        <div class="container-fluid">
+            <div class="testimonial-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500">
+                        <h2 class="section-title">Our Happy Clients</h2>
+                        <p class="section-description">
+                            Collaboration is at the heart of everything we do. See how our clients are achieving more
+                            with
+                            the solutions we build together.
+                        </p>
+                        <button class="see-more-btn" data-aos="fade-right" data-aos-delay="300"
+                            data-aos-duration="1000">See More</button>
+                    </div>
+
+                    <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1500">
+                        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#testimonialCarousel"
+                                    data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#testimonialCarousel"
+                                    data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#testimonialCarousel"
+                                    data-bs-slide-to="3"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <!-- Testimonial 1 -->
+                                <div class="carousel-item active">
+                                    <div class="testimonial-card text-center">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+                                            alt="Adam" class="client-image">
+                                        <div class="rating">5.0</div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="client-name">Adam</div>
+                                        <p class="testimonial-text">
+                                            "We tried several agencies before we found crewtech. as been a pleasure to
+                                            work
+                                            with and will soon start the next project with our second brand."
+                                        </p>
+                                        <a href="#" class="read-more-link">Read More ></a>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial 2 -->
+                                <div class="carousel-item">
+                                    <div class="testimonial-card text-center">
+                                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=200&h=200&fit=crop&crop=face"
+                                            alt="Sarah" class="client-image">
+                                        <div class="rating">4.8</div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="client-name">Sarah</div>
+                                        <p class="testimonial-text">
+                                            "Outstanding service and exceptional results. The team delivered beyond our
+                                            expectations and helped us achieve our business goals faster than
+                                            anticipated."
+                                        </p>
+                                        <a href="#" class="read-more-link">Read More ></a>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial 3 -->
+                                <div class="carousel-item">
+                                    <div class="testimonial-card text-center">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop&crop=face"
+                                            alt="Michael" class="client-image">
+                                        <div class="rating">4.9</div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="client-name">Michael</div>
+                                        <p class="testimonial-text">
+                                            "Professional, reliable, and innovative. They transformed our digital
+                                            presence
+                                            and helped us connect with our customers in ways we never thought possible."
+                                        </p>
+                                        <a href="#" class="read-more-link">Read More ></a>
+                                    </div>
+                                </div>
+
+                                <!-- Testimonial 4 -->
+                                <div class="carousel-item">
+                                    <div class="testimonial-card text-center">
+                                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face"
+                                            alt="Emma" class="client-image">
+                                        <div class="rating">5.0</div>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="client-name">Emma</div>
+                                        <p class="testimonial-text">
+                                            "Incredible attention to detail and a deep understanding of our industry.
+                                            The
+                                            collaboration was smooth and the results speak for themselves."
+                                        </p>
+                                        <a href="#" class="read-more-link">Read More ></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="home6">
+        <div class="container">
+            <div class="faq-section">
+                <h2 class="faq-title">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    Q. How Long Does It Take To Build A Website?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <div style="padding: 25px;">
+                                        The time required to build a website depends on its complexity and requirements.
+                                        A simple website typically takes 1-2 weeks, while a complex e-commerce or custom
+                                        web application can take 4-8 weeks or more. We provide detailed timelines during
+                                        our initial consultation based on your specific needs.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    Q. What Is The Cost Of Website Development?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <div style="padding: 25px;">
+                                        Website development costs vary based on features, design complexity, and
+                                        functionality. Basic websites start from $500-$2000, while custom e-commerce
+                                        solutions range from $3000-$10000+. We offer transparent pricing and detailed
+                                        quotes after understanding your requirements.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    Q. Will My Website Be Mobile Responsive?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <div style="padding: 25px;">
+                                        Yes, absolutely! All websites we develop are fully responsive and
+                                        mobile-friendly. We ensure your site looks and functions perfectly on all
+                                        devices - desktops, tablets, and smartphones. Mobile responsiveness is standard
+                                        in all our development packages.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    Q. Do You Provide Website Maintenance?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <div style="padding: 25px;">
+                                        Yes, we offer comprehensive website maintenance services including regular
+                                        updates, security monitoring, backup management, performance optimization, and
+                                        technical support. We have various maintenance packages to suit different needs
+                                        and budgets.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5">
+                                    Q. Is SEO Included In Website Development?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <div style="padding: 25px;">
+                                        Basic SEO optimization is included in all our website development packages. This
+                                        includes proper meta tags, URL structure, site speed optimization, and mobile
+                                        responsiveness. For advanced SEO services and ongoing optimization, we offer
+                                        separate SEO packages tailored to your marketing goals.
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Get In Touch Section -->
+
+            <div class="container ">
+                <div class="contact-section">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2 class="contact-title" data-aos="fade-down" data-aos-delay="300"
+                                data-aos-duration="1500">Get In Touch</h2>
+                            <div class="contact-info">
+                                <div class="contact-item" data-aos="fade-right" data-aos-delay="100"
+                                    data-aos-duration="1500">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h6>Phone Number</h6>
+                                        <p>+91 8273943836</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item" data-aos="fade-right" data-aos-delay="300"
+                                    data-aos-duration="1500">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h6>Email Address</h6>
+                                        <p>Crewtechventure@Gmail.Com</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-item" data-aos="fade-right" data-aos-delay="500"
+                                    data-aos-duration="1500">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h6>Office Location</h6>
+                                        <p>Agra, Uttar Pradesh, India</p>
+                                    </div>
+                                </div>
+
+                                <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="300"
+                                    data-aos-duration="1500">
+                                    <button class="btn contact-btn">
+                                        <i class="fas fa-paper-plane me-2"></i>
+                                        Contact Us
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="map-container">
+                                <div class="map-overlay"></div>
+                                <div class="map-pin">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section>
+        <div id="footerImplement"></div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
